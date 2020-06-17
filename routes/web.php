@@ -39,14 +39,14 @@ Route::get('/mhs/addNIM', 'MahasiswaController@addNIM')->middleware(CheckLogin::
 Route::get('/mhs/simpanNIM', 'MahasiswaController@simpanNIM')->middleware(CheckLogin::class);
 
 // Route Dosen
-//Route::get('/dosen', 'DosenController@login');
-//Route::get('/dosen', 'LoginController@loginacid');
-//Route::get('/dosen/proseslogin', 'DosenController@proseslogin');
-Route::get('/dosen/home', 'DosenController@home')->middleware(CheckLogin::class);
-Route::get('/dosen/jadwalujian', 'DosenController@jadwalujian')->middleware(CheckLogin::class);
-Route::get('/dosen/daftarbimbingan', 'DosenController@daftarbimbingan')->middleware(CheckLogin::class);
-Route::get('/dosen/profile', 'DosenController@profile')->middleware(CheckLogin::class);
-Route::get('/dosen/logout', 'DosenController@logout')->middleware(CheckLogin::class);
+Route::get('/dosen', 'DosenController@login');
+// Route::get('/dosen', 'LoginController@loginacid');
+Route::get('/dosen/proseslogin', 'DosenController@proseslogin');
+Route::get('/dosen/home', 'DosenController@home');
+Route::get('/dosen/jadwalujian', 'DosenController@jadwalujian');
+Route::get('/dosen/daftarbimbingan', 'DosenController@daftarbimbingan');
+Route::get('/dosen/profile', 'DosenController@profile');
+Route::get('/dosen/logout', 'DosenController@logout');
 
 // Route Koor
 //Route::get('/koor', 'KoorController@login')->middleware(CheckLogin::class);

@@ -95,6 +95,11 @@
 
                 <div class="col-md-6">
                     <h4>Daftar Pengajuan KP</h4><hr>
+                    @if(\Session::has('success'))
+                            <div class="alert alert-success mt-3">
+                                <p>{{ \Session::get('success') }}</p>
+                            </div>
+                        @endif
                     <table class="table table-striped">
                         <thead>
                           <tr>

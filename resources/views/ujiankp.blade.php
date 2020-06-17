@@ -50,7 +50,7 @@
             <form class="form-inline my-2 my-lg-0 ml-auto">
                 <a href="" class="btn font-weight-bold text-white">Mahasiswa</a>
                 <a href="/mhs/usermhs" class="btn text-white"><i class="fas fa-user" data-toggle="tooltip" title="User Profile"></i></a> 
-                <a href="" class="btn text-white"><i class="fas fa-sign-out-alt" data-toggle="tooltip" title="Logout"></i></a> 
+                <a href="/mhs/logout" class="btn text-white"><i class="fas fa-sign-out-alt" data-toggle="tooltip" title="Logout"></i></a> 
                 
             </form>
             </div>

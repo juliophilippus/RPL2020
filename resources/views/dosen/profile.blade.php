@@ -23,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-success">
             <div class="container-fluid">
-            <a class="navbar-brand font-weight-bold text-white" href="/dosen">SIKP</a>
+            <a class="navbar-brand font-weight-bold text-white" href="/mhs">SIKP</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -66,20 +66,47 @@
                 </div>
             </div>
 
-            @foreach($dosen as $dosen)
             <div class="lower-container">
                 <div>
-                    <p class="font-weight-bold">@php echo $dosen->nama  @endphp</p>
-                    <h5>@php echo $dosen->nim_nidn  @endphp</h5>
+                    <p class="font-weight-bold">{{ $profile->nama }}</p>
+                    <h5>{{ $profile->nik }}</h5>
                 </div>
                 <div>
-                    <p>@php echo $dosen->email  @endphp</p>
+                    <p>{{ $profile->email }}</p>
                 </div>
                 <div>
-                <a href="/dosen/logout" class="btn btn-success">Logout</a>
                 </div>
             </div>
-            @endforeach
+            <!-- Modal -->
+            <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                 <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Update User Profile</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="">Nama Lengkap</label>
+                                        <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">NIM</label>
+                                        <input type="text" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- End Modal -->
             
         </div>
                                 

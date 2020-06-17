@@ -63,7 +63,7 @@
       <!-- Main Content -->
       <main>
         <div class="container-fluid mt-2">
-            <h2><i class="fas fa-calendar-alt mr-2"></i>Persetujuan Pra KP</h2>
+            <h2><i class="fas fa-calendar-alt mr-2"></i>Verifikasi Pra KP</h2>
             <!-- Form -->
             <div class="container-fluid">
                 <table class="table table-striped">
@@ -82,7 +82,7 @@
                           <tr>
                             <th scope="row">{{ $loop->iteration }}</th>
                             <td>{{ $key->judul }}</td>
-                            <td>{{ $key->nama }}</td>
+                            <td>{{ $key->pembimbing }}</td>
                             <td>
                                 {{ $key->tahun.$key->semester }}
                                 (

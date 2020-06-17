@@ -53,7 +53,7 @@ class KoorController extends Controller
 
     public function prakp()
     {
-    	$prakp = DB::table('view_prakp')->get();
+    	$prakp = DB::table('prakp')->get();
     	return view('koor.pengajuanprakp', ['prakp' => $prakp]);
     }
 

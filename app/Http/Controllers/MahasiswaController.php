@@ -28,7 +28,7 @@ class MahasiswaController extends Controller
     }
 
     public function formPraKP(){
-        $prakp = DB::table('view_prakp')->get();
+        $prakp = DB::table('prakp')->get();
         $koor_kp = DB::table('koor_kp')->get();
         return view('prakp', ['prakp' => $prakp, 'koor_kp' => $koor_kp]);
     }

@@ -63,7 +63,7 @@
       <!-- Main Content -->
       <main>
         <div class="container-fluid mt-2">
-            <h2><i class="fas fa-calendar-alt mr-2"></i>Persetujuan KP</h2>
+            <h2><i class="fas fa-calendar-alt mr-2"></i>Verifikasi KP</h2>
             <!-- Form -->
             <div class="container-fluid">
                 <table class="table table-striped">

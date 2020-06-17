@@ -68,6 +68,11 @@
                 <div class="col-md-6">
                     <h4>Data Pengajuan Pra KP</h4>
                     <hr>
+                    @if(\Session::has('success'))
+                            <div class="alert alert-success mt-3">
+                                <p>{{ \Session::get('success') }}</p>
+                            </div>
+                        @endif
                     <form action="/mhs/simpanPraKP">
                         <div class="form-group">
                             <label for="" class="font-weight-bold">Tahun</label>
@@ -102,7 +107,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <h4>Daftar Pengajuan Pra KP</h4><hr>
+                    <h4>Daftar Pengajuan Pra KP</h4>
                     <table class="table table-striped">
                         <thead>
                           <tr>
@@ -118,7 +123,7 @@
                               <tr>
                                 <th scope="row">{{ $loop->iteration }}</th>
                                 <td>{{ $key->judul }}</td>
-                                <td>{{ $key->nama }}</td>
+                                <td>{{ $key->pembimbing }}</td>
                                 <td>
                                     {{ $key->tahun.$key->semester }}
                                     (

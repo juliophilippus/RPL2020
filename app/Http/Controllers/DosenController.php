@@ -51,13 +51,13 @@ class DosenController extends Controller
 
     public function profile()
     {
-        $user_mhs = DB::table('user')->where('google_Id', '=', session('key'))->get();
-        return view('dosen.profile', ['dosen' => $user_mhs]);
+    	$profile = DB::table('koor_kp')->where('id_koor', '=', session('id_koor'))->first();
+    	return view('dosen.profile', ['profile' => $profile]);
     }
 
     public function logout()
     {
         session(['id_koor' => '']);
-        return redirect('/');
+        return redirect('/dosen');
     }
 }
